@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TDN Official | Elite PUBG Squad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #ea580c; }
+        body { background-color: #050505; color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .font-orbitron { font-family: 'Orbitron', sans-serif; }
+        .bg-glass { background: rgba(15, 15, 15, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .hero-gradient { background: radial-gradient(circle at center, rgba(234, 88, 12, 0.1) 0%, transparent 70%); }
+        .glow { text-shadow: 0 0 20px rgba(234, 88, 12, 0.5); }
+        .card-hover:hover { border-color: rgba(234, 88, 12, 0.4); transform: translateY(-5px); transition: all 0.4s ease; }
+        @keyframes status-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        .animate-status { animation: status-pulse 2s infinite; }
+    </style>
+</head>
+<body class="selection:bg-orange-600">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/5 p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-orange-600 rounded flex items-center justify-center font-bold text-black font-orbitron">T</div>
+                <h1 class="font-orbitron font-black text-xl tracking-tighter uppercase italic glow">TDN <span class="text-orange-500">OFFICIAL</span></h1>
+            </div>
+            <div class="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-widest text-gray-400 font-orbitron">
+                <a href="#about" class="hover:text-orange-500 transition-colors">Who We Are</a>
+                <a href="#activities" class="hover:text-orange-500 transition-colors">What We Do</a>
+                <a href="#squad" class="hover:text-orange-500 transition-colors">Our Squad</a>
+            </div>
+            <div class="text-[10px] font-bold uppercase tracking-widest text-orange-500 animate-status">● System Live</div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <main class="min-h-screen flex items-center justify-center pt-20 hero-gradient px-6 text-center">
+        <div class="max-w-4xl">
+            <div class="mb-6 inline-flex items-center gap-2 px-4 py-1.5 border border-orange-500/20 rounded-full text-[10px] font-bold uppercase tracking-widest text-orange-500 bg-orange-500/5">Elite Battleground Personnel</div>
+            <h2 class="font-orbitron text-5xl md:text-8xl font-black uppercase italic mb-6 leading-tight tracking-tighter">ONE TAG.<br/>ONE <span class="text-orange-500">LEGACY.</span></h2>
+            <p class="text-gray-400 max-w-xl mx-auto mb-10 text-sm md:text-lg leading-relaxed font-light italic">"Win or lose — we play as one team. We are TDN Official."</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center font-orbitron">
+                <a href="#squad" class="bg-orange-600 px-10 py-4 rounded-xl font-bold text-xs tracking-[0.2em] hover:bg-orange-500 transition-all shadow-lg shadow-orange-600/20 text-white">VIEW ROSTER</a>
+                <button class="bg-white/5 border border-white/10 px-10 py-4 rounded-xl font-bold text-xs tracking-[0.2em] hover:bg-white/10 transition-all text-white">BATTLE DATA</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- About -->
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto border-t border-white/5">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h3 class="font-orbitron text-3xl font-black mb-6 italic uppercase text-orange-500">🔥 Who We Are</h3>
+                <p class="text-gray-300 leading-relaxed text-lg mb-6">We are <strong>TDN</strong> — a group of passionate PUBG players who play together, grow together, and turn every match into a memory.</p>
+                <div class="p-6 bg-orange-600/5 border border-orange-500/20 rounded-2xl italic text-orange-500 font-bold text-center">"Win or lose — we play as one team."</div>
+            </div>
+            <div class="bg-glass p-8 rounded-3xl border-white/10">
+                <h4 class="font-orbitron font-bold text-white mb-4 uppercase italic text-sm">🕹️ What We Do</h4>
+                <ul class="text-gray-400 text-xs space-y-3 uppercase tracking-widest font-bold">
+                    <li>🎯 Squad & Classic Matches</li>
+                    <li>📸 Match Memories</li>
+                    <li>🎥 Highlight Clips</li>
+                    <li>🏆 Special Match Moments</li>
+                    <li>🤝 Team Bonding Beyond Game</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Squad -->
+    <section id="squad" class="py-24 px-6 bg-zinc-950/50">
+        <div class="max-w-7xl mx-auto text-center">
+            <h3 class="font-orbitron text-4xl font-black italic uppercase mb-16">Our <span class="text-orange-500">Squad</span></h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="bg-glass p-8 rounded-3xl card-hover border-orange-500/10">
+                    <div class="w-16 h-16 bg-orange-600 rounded-2xl mb-6 mx-auto flex items-center justify-center font-bold text-black font-orbitron text-2xl">L</div>
+                    <h4 class="font-orbitron font-bold text-lg">TDN_Leader</h4>
+                    <p class="text-orange-500 text-[10px] font-bold uppercase tracking-widest mt-1">IGL</p>
+                </div>
+                <div class="bg-glass p-8 rounded-3xl card-hover border-white/5">
+                    <div class="w-16 h-16 bg-zinc-800 rounded-2xl mb-6 mx-auto flex items-center justify-center font-bold text-orange-500 font-orbitron text-2xl">G</div>
+                    <h4 class="font-orbitron font-bold text-lg">TDN_Ghost</h4>
+                    <p class="text-orange-500 text-[10px] font-bold uppercase tracking-widest mt-1">Sniper</p>
+                </div>
+                <div class="bg-glass p-8 rounded-3xl card-hover border-white/5">
+                    <div class="w-16 h-16 bg-zinc-800 rounded-2xl mb-6 mx-auto flex items-center justify-center font-bold text-orange-500 font-orbitron text-2xl">R</div>
+                    <h4 class="font-orbitron font-bold text-lg">TDN_Reaper</h4>
+                    <p class="text-orange-500 text-[10px] font-bold uppercase tracking-widest mt-1">Rusher</p>
+                </div>
+                <div class="bg-glass p-8 rounded-3xl card-hover border-white/5">
+                    <div class="w-16 h-16 bg-zinc-800 rounded-2xl mb-6 mx-auto flex items-center justify-center font-bold text-orange-500 font-orbitron text-2xl">S</div>
+                    <h4 class="font-orbitron font-bold text-lg">TDN_Support</h4>
+                    <p class="text-orange-500 text-[10px] font-bold uppercase tracking-widest mt-1">Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 border-t border-white/5 text-center bg-black">
+        <div class="font-orbitron font-black text-2xl italic mb-4 glow tracking-tighter uppercase">TDN OFFICIAL</div>
+        <p class="text-gray-600 text-[8px] uppercase tracking-[0.6em] font-bold">© 2025 TDN BANGLADESH • ONE TEAM • ONE LEGACY</p>
+    </footer>
+</body>
+</html>
